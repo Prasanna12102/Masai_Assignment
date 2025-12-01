@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Masai Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .title {
+      margin-top: 80px;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #2181a1;
+      font-weight: bold;
+    }
+    .calculator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      width: 300px;
+      margin: auto;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(40,40,55,0.10);
+      padding: 32px 16px;
+    }
+    .display {
+      height: 40px;
+      width: 90%;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      text-align: right;
+      font-size: 1.3rem;
+      padding-right: 8px;
+      background: #f5f5f5;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      grid-template-rows: repeat(4, 50px);
+      gap: 10px;
+    }
+    .btn {
+      border: none;
+      border-radius: 8px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      background: #efefef;
+      color: #222;
+      transition: background 0.2s;
+    }
+    .btn.op {
+      background: #223049;
+      color: #fff;
+    }
+    .btn.c {
+      background: #df2637;
+      color: #fff;
+    }
+    .btn:active {
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Masai Calculator</div>
+  <div class="calculator">
+    <input class="display" type="text" disabled />
+    <div class="buttons">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn op">+</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn op">-</button>
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn op">x</button>
+      <button class="btn c">C</button>
+      <button class="btn">0</button>
+      <button class="btn op">=</button>
+      <button class="btn op">/</button>
+    </div>
+  </div>
+</body>
+</html>

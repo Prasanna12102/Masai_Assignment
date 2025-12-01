@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Layout</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      width: 500px;
+      margin: 50px auto;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: white;
+      height: 120px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    .item1 { background: #11cfff; } /* Light Blue */
+    .item2 { background: #e53e3e; } /* Red */
+    .item3 { background: #2b6cb0; } /* Blue */
+    .item4 { background: #ecc94b; color: #444;} /* Yellow */
+    .item5 { background: #805ad5; } /* Purple */
+    .item6 { background: #38a169; } /* Green */
+    .item7 { background: #ed8936; } /* Orange */
+    .item8 { background: #38b2ac; } /* Cyan */
+    .item9 { background: #9b2c2c; } /* Dark Red */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item2">2.</div>
+    <div class="item item3">3.</div>
+    <div class="item item4">4.</div>
+    <div class="item item5">5.</div>
+    <div class="item item6">6.</div>
+    <div class="item item1">1.</div>
+    <div class="item item7">7.</div>
+    <div class="item item8">8.</div>
+    <div class="item item9">9.</div>
+  </div>
+</body>
+</html>
