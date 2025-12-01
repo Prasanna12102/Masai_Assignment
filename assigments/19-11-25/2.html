@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Founder Profiles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: #f6f6f6;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: #fff;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+        .name {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .designation {
+            color: #555;
+            margin: 6px 0;
+        }
+        .company-logo {
+            max-width: 80px;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 901px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Founder & CEO Profiles</h2>
+    <div class="container">
+        <div class="card">
+            <img src="https://your-server.com/image1.jpg" alt="Profile photo">
+            <div class="name">Vijay Shekhar Sharma</div>
+            <div class="designation">Founder & CEO</div>
+            <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Paytm_logo.png" alt="Paytm">
+        </div>
+        <div class="card">
+            <img src="https://your-server.com/image2.jpg" alt="Profile photo">
+            <div class="name">Kunal Shah</div>
+            <div class="designation">Founder</div>
+            <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/CRED-logo.png" alt="CRED">
+        </div>
+        <div class="card">
+            <img src="https://your-server.com/image3.jpg" alt="Profile photo">
+            <div class="name">Amrish Rau</div>
+            <div class="designation">CEO</div>
+            <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/69/Pine_Labs_logo.png" alt="Pine Labs">
+        </div>
+        <div class="card">
+            <img src="https://your-server.com/image4.jpg" alt="Profile photo">
+            <div class="name">Sampad Swain</div>
+            <div class="designation">Co-Founder & CEO</div>
+            <img class="company-logo" src="https://your-server.com/instamojo-logo.png" alt="Instamojo">
+        </div>
+        <!-- Add more cards as necessary -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Coffee Menu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+            padding: 32px 24px;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .coffee-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #212644;
+        }
+        .price {
+            font-weight: bold;
+            color: #cf9836;
+            font-size: 1.1em;
+        }
+        .coffee-details {
+            color: #686f77;
+            font-size: 1em;
+        }
+        /* Media query for medium screens */
+        @media (max-width: 900px) {
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        /* Media query for small screens */
+        @media (max-width: 600px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .menu-container {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Cappuccino</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Americano</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Espresso</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Macchiato</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Mocha</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Coffee Latte</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Piccolo Latte</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Ristretto</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="coffee-name">Affogato</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="coffee-details">
+                    Usage of the Internet is becoming more common due to rapid advance.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

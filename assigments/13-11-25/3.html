@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Masai Course Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+    body {
+      background: #fafbfc;
+      margin: 0;
+      padding: 24px;
+    }
+    .courses-container {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .course-card {
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 4px 16px #e6e6e6;
+      padding: 26px 24px 24px 24px;
+      width: 320px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: box-shadow 0.2s;
+    }
+    .course-card:nth-child(3) {
+      background: #eb296a;
+      color: #fff;
+    }
+    .course-card:hover {
+      box-shadow: 0 8px 22px rgba(44,90,243,0.15);
+      transform: translateY(-8px);
+    }
+    .course-card .icon {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .course-card:nth-child(1) .icon {
+      color: #4992db;
+    }
+    .course-card:nth-child(2) .icon {
+      color: #5d50c6;
+    }
+    .course-card:nth-child(3) .icon {
+      color: #fff;
+    }
+    .course-title {
+      font-size: 1.15em;
+      font-weight: bold;
+      margin-bottom: 14px;
+      min-height: 54px;
+    }
+    .course-info {
+      font-size: 1em;
+      margin-bottom: 2px;
+      color: #555b6a;
+    }
+    .course-card:nth-child(3) .course-title,
+    .course-card:nth-child(3) .course-info {
+      color: #fff;
+    }
+    .qualifier {
+      color: #ee3180;
+      font-weight: bold;
+      margin-bottom: 14px;
+      font-size: 0.96em;
+    }
+    .course-card:nth-child(3) .qualifier {
+      color: #fff;
+      font-weight: 500;
+    }
+    .btn-group {
+      display: flex;
+      gap: 16px;
+      margin-top: 14px;
+    }
+    .btn {
+      padding: 8px 20px;
+      border-radius: 18px;
+      font-weight: 600;
+      font-size: 1em;
+      border: 2px solid #ee3180;
+      background: #fff;
+      color: #ee3180;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn.brochure {
+      background: #fff;
+      color: #ee3180;
+    }
+    .btn.learn {
+      background: #ee3180;
+      color: #fff;
+      border-color: #ee3180;
+    }
+    .btn.learn:hover {
+      background: #a91e4b;
+      color: #fff;
+    }
+    .btn.brochure:hover {
+      background: #ffe3f0;
+      color: #ee3180;
+    }
+    .course-card:nth-child(3) .btn {
+      border: 2px solid #fff;
+    }
+    .course-card:nth-child(3) .btn.learn {
+      background: #fff;
+      color: #eb296a;
+    }
+    .course-card:nth-child(3) .btn.learn:hover {
+      background: #ffe3f0;
+      color: #eb296a;
+    }
+    .course-card:nth-child(3) .btn.brochure {
+      background: #eb296a;
+      color: #fff;
+    }
+    .course-card:nth-child(3) .btn.brochure:hover {
+      background: #fff;
+      color: #eb296a;
+    }
+
+    .course-title,
+    .course-info {
+      margin-left: 1px;
+    }
+
+    @media (max-width: 1000px) {
+      .courses-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="courses-container">
+    <!-- Card 1 -->
+    <div class="course-card">
+      <span class="icon">🎓</span>
+      <div class="course-title">IIM Sirmaur <br> EDGE: Essentials of Data Analytics, Gen AI & Execution</div>
+      <div class="course-info">06 months &nbsp;|&nbsp; Online</div>
+      <div class="qualifier">Qualifier test – <b>12th Nov 2025</b></div>
+      <div class="btn-group">
+        <a href="#" class="btn learn">Learn more →</a>
+        <a href="#" class="btn brochure">Brochure →</a>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="course-card">
+      <span class="icon">🏆</span>
+      <div class="course-title">Vihlesan i-Hub IIT Patna <br> Product Management and Agentic AI</div>
+      <div class="course-info">06 months &nbsp;|&nbsp; Online</div>
+      <div class="qualifier">Qualifier test – <b>12th Nov 2025</b></div>
+      <div class="btn-group">
+        <a href="#" class="btn learn">Learn more →</a>
+        <a href="#" class="btn brochure">Brochure →</a>
+      </div>
+    </div>
+    <!-- Card 3  -->
+    <div class="course-card">
+      <span class="icon">🎯</span>
+      <div class="course-title">Vihlesan i-Hub IIT Patna <br> Certification Program in Data Analytics with Gen & Agentic AI</div>
+      <div class="course-info">06 months &nbsp;|&nbsp; Online</div>
+      <div class="qualifier">Qualifier test – <b>9th Nov 2025</b></div>
+      <div class="btn-group">
+        <a href="#" class="btn learn">Learn more →</a>
+        <a href="#" class="btn brochure">Brochure →</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

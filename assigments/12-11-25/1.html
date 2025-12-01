@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Webpage</title>
+  <style>
+    body {
+      font-family: Arial, Times New Roman, sans-serif;
+      background: linear-gradient(to right, #e3eefe, #f3fbff); /* light gradient */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      border: 3px solid black;
+      padding: 5px;
+      text-align: center;
+      background: #f0f0f0;
+    }
+    h1 {
+      font-size: 40px;
+      color: darkblue;
+    }
+    h2 {
+      font-size: 28px;
+      color: green;
+      font-weight: bold;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .main-img {
+      display: block;
+      margin: 30px auto 20px auto;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    table {
+      margin: 0 auto 20px auto;
+      border-collapse: collapse;
+      min-width: 300px;
+    }
+    th, td {
+      border: 2px solid #aaa;
+      padding: 8px 16px;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #eef;
+    }
+    tr:nth-child(odd) {
+      background-color: #fff;
+    }
+    td {
+      border-color: #444;
+    }
+    .learn-btn {
+      display: block;
+      margin: 20px auto;
+      background: #4caf50;
+      color: white;
+      padding: 12px 32px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .learn-btn:hover {
+      background: #388e3c;
+    }
+    .paragraph {
+      margin: 25px auto;
+      max-width: 600px;
+      text-align: justify;
+      color: #333;
+      border: 2px solid #888;
+      padding: 15px;
+      background: #f7f7f7;
+    }
+    .form-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .form-section input[type="text"], .form-section input[type="email"] {
+      padding: 8px;
+      margin: 8px;
+      border-radius: 4px;
+      border: 1px solid #aaa;
+    }
+    .form-section input[type="submit"] {
+      padding: 8px 20px;
+      border-radius: 4px;
+      background: #2196f3;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    /* Footer styles */
+    footer {
+      background: #222;
+      color: #ddd;
+      font-size: 14px;
+      text-align: center;
+      padding: 14px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Webpage</h1>
+    <h2>Learning Web Development</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <img class="main-img" src="masaii.png" alt="Profile Image">
+
+  <table>
+    <tr>
+      <th>Service</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td style="border-color:#f44336;">Web Design</td>
+      <td style="border-color:#9c27b0;">$250</td>
+    </tr>
+    <tr>
+      <td style="border-color:#2196f3;">SEO Optimization</td>
+      <td style="border-color:#ffeb3b;">$150</td>
+    </tr>
+    <tr>
+      <td style="border-color:#009688;">Consulting</td>
+      <td style="border-color:#607d8b;">$300</td>
+    </tr>
+  </table>
+
+  <button class="learn-btn">Learn More</button>
+
+  <div class="paragraph">
+    Welcome! This website showcases various web development services. From design to deployment, we offer everything a business needs to get online and grow successfully.
+  </div>
+
+  <div class="form-section">
+    <form>
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name. All Rights Reserved.
+  </footer>
+</body>
+</html>
